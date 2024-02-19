@@ -8,7 +8,7 @@ The dataset files should be stored in the `dataset_files` folder. The codes to p
 ## Datasets ##
 - The DBLP/ACM datasets are adopted from the UDAGCN paper and can be downloaded following the [Github repo](https://github.com/GRAND-Lab/UDAGCN) 
 
-- The Arxiv dataset is from the [ogbn-arxiv](https://ogb.stanford.edu/docs/nodeprop/) dataset
+- The Arxiv dataset is from the [ogbn-arxiv](https://ogb.stanford.edu/docs/nodeprop/) dataset and the processed file is adopted from [EERM](https://github.com/qitianwu/GraphOOD-EERM/tree/e757002ff1f7f9b0306b37dd65b5c72adeadd38b).
 
 - The MAG dataset is originally from the [ogbn-mag](https://ogb.stanford.edu/docs/nodeprop/) dataset and our code to process into separate graphs in different country is `./data_process/gen_spr_graph.py`. The files needed to generate the processed graph and the saved graphs for the top 6 countries can be downloaded [here](https://zenodo.org/records/10681285).
 
