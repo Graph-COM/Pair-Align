@@ -3,6 +3,22 @@
 This repository is the implementation for the paper Pairwise Alignment Improves Graph Domain Adaptation by Shikun Liu, Deyu Zou, Han Zhao and Pan Li.
 
 ## Overview ##
+This work studies distribution shifts in real-world graph data for graph domain adaptation (GDA). In particular, we focus on the graph structure shift and decompose it into conditional structure shift (CSS) and label shift (LS). We propose a novel pairwise alignment (Pair-Align) algorithm to mitigate the CSS and LS simultaneously. 
+
+<p align="center"><img src="./plots/shifts.png" width=85% height=85%></p>
+<p><em>Figure 1.</em> We illustrate structure shifts in real-world datasets. More details and statistics can be found in the paper.</p>
+
+The key idea of Pair-Align is to estimate and subsequently mitigate the distribu-
+tion shift in the neighboring nodes’ representations for any
+given node class c. To achieve this, Pair-Align employs a
+bootstrapping technique to recalibrate the influence of neighboring nodes in the message aggregation phase of GNNs.
+This strategic reweighting is key to effectively countering
+CSS. Concurrently, Pair-Align calculates label weights to
+alleviate disparities in the label distribution between source
+and target domains (addressing LS) by adjusting the classification loss. 
+
+<p align="center"><img src="./plots/pipeline.png" width=85% height=85%></p>
+
 The dataset files should be stored in the `dataset_files` folder. The codes to process the datasets are in the `data_process` folder. The codes for training, models, utils are in the `src` folder.
 
 ## Datasets ##
