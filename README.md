@@ -1,6 +1,6 @@
 <h1 align="center">Pairwise Alignment Improves Graph Domain Adaptation (Pair-Align)</h1>
 
-This repository is the implementation for the paper Pairwise Alignment Improves Graph Domain Adaptation by Shikun Liu, Deyu Zou, Han Zhao and Pan Li.
+This repository is the implementation for the paper [Pairwise Alignment Improves Graph Domain Adaptation](https://arxiv.org/abs/2403.01092) by Shikun Liu, Deyu Zou, Han Zhao and Pan Li.
 
 ## Overview ##
 This work studies distribution shifts in real-world graph data for graph domain adaptation (GDA). In particular, we focus on the graph structure shift and decompose it into conditional structure shift (CSS) and label shift (LS). We propose a novel pairwise alignment (Pair-Align) algorithm to mitigate the CSS and LS simultaneously. 
