@@ -79,6 +79,9 @@ where the `src_name` can be chosen from `DBLP, ACM` and the `tgt_name` can be ch
 
 The detailed range and value of these hyperparameters for each dataset are listed in the paper appendix.
 
+## Connection to StruRW ##
+This work is an extension of our previous work [StruRW](https://github.com/Graph-COM/StruRW), which considers a more generalized graph structure shift scenario including label shift (LS) in addition to the conditional structure shift (CSS) in StruRW. Consequently, under the general graph structure shift case, Pair-Align has unbiased edge weight estimations compared to the previous StruRW estimations. In addition, StruRW assumes perfect training in the source domain and uses hard pseudo-labels in the target domain to estimate the edge weights, which may suffer from inaccurate estimations. Wheareas, Pair-Align optimizes for the edge weights in a more robust manner. Overall, you can think of StruRW as a prior study and consider some special case of Pair-Align. 
+
 ## Citation ##
 If you find our paper and Github repo useful, please cite our paper:
 ```bibtex
