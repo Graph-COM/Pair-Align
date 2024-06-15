@@ -78,3 +78,15 @@ where the `src_name` can be chosen from `DBLP, ACM` and the `tgt_name` can be ch
 - `--lw_lambda` is to specify the $\lambda_\beta$ value to control regularization of $\beta$ in least square optimization
 
 The detailed range and value of these hyperparameters for each dataset are listed in the paper appendix.
+
+## Citation ##
+If you find our paper and Github repo useful, please cite our paper:
+```bibtex
+@article{liu2024pairwise,
+  title={Pairwise Alignment Improves Graph Domain Adaptation},
+  author={Liu, Shikun and Zou, Deyu and Zhao, Han and Li, Pan},
+  journal= {International Conference on Machine Learning},
+  year= {2024}
+}
+```
+Thanks for your interest!
